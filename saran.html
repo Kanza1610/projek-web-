@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Saran - KANZ STORE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="warpper">
+            <div class="logo"><a href=''>Tempatnya Cari Akun Genshin Impact</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="saran.html">Saran</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-white">
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+            <h1 class="text-2xl font-bold text-gray-900 sm:text-5xl text-center">Saran dan Masukan</h1>
+            <p class="mt-2 text-center text-gray-500">Kami menghargai pendapat Anda untuk meningkatkan layanan kami.</p>
+        </div>
+    </header>
+
+    <section class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+        <div class="flex flex-col items-center bg-white rounded-lg shadow-lg p-8">
+            <form action="submit_saran.php" method="POST" class="w-full max-w-lg">
+                <div class="mb-4">
+                    <label for="nama" class="block text-gray-700 text-sm font-bold mb-2">Nama Anda</label>
+                    <input type="text" id="nama" name="nama" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Masukkan nama Anda">
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email Anda</label>
+                    <input type="email" id="email" name="email" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" placeholder="Masukkan email Anda">
+                </div>
+                <div class="mb-4">
+                    <label for="saran" class="block text-gray-700 text-sm font-bold mb-2">Saran atau Masukan</label>
+                    <textarea id="saran" name="saran" required class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows="4" placeholder="Tulis saran atau masukan Anda di sini"></textarea>
+                </div>
+                <div class="flex items-center justify-center">
+                    <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Kirim Saran</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center p-4 mt-8">
+        <p>&copy; 2024 KANZ STORE. Menjamin Kepuasan Pelanggan.</p>
+    </footer>
+</body>
+</html>
